@@ -1,7 +1,7 @@
 {
   "name": "@designsforhealth/eslint-import-resolver-netsuite",
   "description": "eslint-plugin-import resolver for NetSuite projects",
-  "version": "2.0.0",
+  "version": "1.0.0",
   "author": "Johnny Walker <jwalker@designsforhealth.com>",
   "contributors": [],
   "dependencies": {
@@ -11,8 +11,6 @@
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
-    "@semantic-release/changelog": "^5.0.1",
-    "@semantic-release/git": "^9.0.0",
     "@tsconfig/recommended": "^1.0.1",
     "@types/chai": "^4.2.14",
     "@types/jest": "^26.0.19",
@@ -28,8 +26,8 @@
     "jest": "^26.6.3",
     "lint-staged": "^10.5.3",
     "prettier": "^2.2.1",
-    "semantic-release": "^17.2.2",
     "source-map-support": "^0.5.19",
+    "standard-version": "^9.1.0",
     "ts-jest": "^26.4.4",
     "typescript": "^4.0.5"
   },
