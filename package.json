@@ -1,7 +1,7 @@
 {
   "name": "@designsforhealth/eslint-import-resolver-netsuite",
   "description": "eslint-plugin-import resolver for NetSuite projects",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "Johnny Walker <jwalker@designsforhealth.com>",
   "contributors": [],
   "dependencies": {
