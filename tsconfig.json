@@ -1,0 +1,9 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "@tsconfig/recommended/tsconfig.json",
+  "compilerOptions": {
+    "outDir": "lib",
+    "target": "ES2019"
+  },
+  "include": ["src/**/*.ts"]
+}
