@@ -36,6 +36,18 @@
   "engines": {
     "node": ">=12"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts}": [
+      "eslint --cache --fix",
+      "prettier --write"
+    ],
+    "*.{json,md}": "prettier --write"
+  },
   "keywords": [
     "eslint-plugin-import",
     "netsuite",
@@ -49,9 +61,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/designsforhealth/eslint-import-resolver-netsuite.git",
+    "url": "git+https://github.com/designsforhealth/eslint-import-resolver-netsuite.git"
   },
   "scripts": {
+    "format": "prettier --write \"**/*.{js,ts,json,md}\"",
     "prepare": "tsc && yarn test",
     "test": "jest"
   }

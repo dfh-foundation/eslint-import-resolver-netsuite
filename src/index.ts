@@ -65,7 +65,9 @@ const opts = (file: string, config: Config) => ({
 });
 
 const isRelativeDirectoryImport = (source: string, resolved: string): boolean =>
-  source.startsWith('.') && !/index(?:\.[^\/]+|)$/.test(source) && /index\.[^\/]+$/.test(resolved);
+  source.startsWith(".") &&
+  !/index(?:\.[^\/]+|)$/.test(source) &&
+  /index\.[^\/]+$/.test(resolved);
 
 export const interfaceVersion = 2;
 
