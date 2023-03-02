@@ -29,6 +29,7 @@ const suiteScriptModules = [
   'N/error',
   'N/file',
   'N/format',
+  'N/format/i18n',
   'N/http',
   'N/https',
   'N/keyControl',
