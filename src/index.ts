@@ -51,6 +51,7 @@ const suiteScriptModules = [
   'N/sso',
   'N/suiteAppInfo',
   'N/task',
+  'N/task/accounting/recognition',
   'N/transaction',
   'N/translation',
   'N/url',
