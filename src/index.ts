@@ -21,6 +21,7 @@ const suiteScriptModules = [
   'N/compress',
   'N/config',
   'N/crypto',
+  'N/crypto/certificate',
   'N/currency',
   'N/currentRecord',
   'N/dataset',
