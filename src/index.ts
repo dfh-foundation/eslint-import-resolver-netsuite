@@ -25,6 +25,7 @@ const suiteScriptModules = [
   'N/currency',
   'N/currentRecord',
   'N/dataset',
+  'N/datasetLink',
   'N/email',
   'N/encode',
   'N/error',
