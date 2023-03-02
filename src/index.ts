@@ -1,7 +1,8 @@
 import * as nodeResolve from 'resolve'
 import path from 'path'
+import debug from 'debug'
 
-const log = require('debug')('eslint-import-resolver-netsuite')
+const log = debug('eslint-import-resolver-netsuite')
 
 interface Config {
   extensions?: string[]
@@ -65,7 +66,7 @@ const opts = (file: string, config: Config) => ({
 })
 
 const isRelativeDirectoryImport = (source: string, resolved: string): boolean =>
-  source.startsWith('.') && !/index(?:\.[^\/]+|)$/.test(source) && /index\.[^\/]+$/.test(resolved)
+  source.startsWith('.') && !/index(?:\.[^/]+|)$/.test(source) && /index\.[^/]+$/.test(resolved)
 
 export const interfaceVersion = 2
 
