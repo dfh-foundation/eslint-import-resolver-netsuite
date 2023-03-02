@@ -49,6 +49,7 @@ const suiteScriptModules = [
   'N/search',
   'N/sftp',
   'N/sso',
+  'N/suiteAppInfo',
   'N/task',
   'N/transaction',
   'N/translation',
