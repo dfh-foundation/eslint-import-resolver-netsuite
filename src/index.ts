@@ -34,6 +34,7 @@ const suiteScriptModules = [
   'N/format/i18n',
   'N/http',
   'N/https',
+  'N/https/clientCertificate',
   'N/keyControl',
   'N/log',
   'N/plugin',
