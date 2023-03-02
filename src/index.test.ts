@@ -1,63 +1,62 @@
-import { resolve } from "./index";
+import { resolve } from './index'
 
-describe("resolve()", () => {
-  it("should resolve SuiteScript module", () => {
+describe('resolve()', () => {
+  it('should resolve SuiteScript module', () => {
     // given
     const params = {
       config: {},
-      source: "N/search",
+      source: 'N/search',
       file: __filename,
-    };
+    }
 
     // when
-    const result = resolve(params.source, params.file, params.config);
+    const result = resolve(params.source, params.file, params.config)
 
     // then
-    expect(result).toEqual({ found: true, path: null });
-  });
-  it("should resolve non-relative directory import", () => {
+    expect(result).toEqual({ found: true, path: null })
+  })
+  it('should resolve non-relative directory import', () => {
     // given
     const params = {
       config: {},
-      source: "resolve", // use dependency required by package
+      source: 'resolve', // use dependency required by package
       file: __filename,
-    };
+    }
 
     // when
-    const result = resolve(params.source, params.file, params.config);
+    const result = resolve(params.source, params.file, params.config)
 
     // then
-    expect(result.found).toBe(true);
-    expect(result.path).toContain("resolve/index.js");
-  });
-  it("should resolve relative file import", () => {
+    expect(result.found).toBe(true)
+    expect(result.path).toContain('resolve/index.js')
+  })
+  it('should resolve relative file import', () => {
     // given
     const params = {
       config: {},
-      source: "./index",
+      source: './index',
       file: __filename,
-    };
+    }
 
     // when
-    const result = resolve(params.source, params.file, params.config);
+    const result = resolve(params.source, params.file, params.config)
 
     // then
-    expect(result.found).toBe(true);
-    expect(result.path).toContain("/index.ts");
-  });
-  it("should throw error resolving relative directory import", () => {
+    expect(result.found).toBe(true)
+    expect(result.path).toContain('/index.ts')
+  })
+  it('should throw error resolving relative directory import', () => {
     // given
     const params = {
       config: {},
-      source: "./",
+      source: './',
       file: __filename,
-    };
+    }
 
     // when
-    const shouldThrow = () =>
-      resolve(params.source, params.file, params.config);
+    const shouldThrow = () => resolve(params.source, params.file, params.config)
 
     // then
-    expect(shouldThrow).toThrow("Found relative directory import");
-  });
-});
+    expect(shouldThrow).toThrow('Found relative directory import')
+  })
+})

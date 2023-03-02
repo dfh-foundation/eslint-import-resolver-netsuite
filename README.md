@@ -16,12 +16,12 @@ This resolver accepts a single configuration option: `extensions`. This defaults
 
 ```js
 module.exports = {
-  settings: {
-    "import/resolver": {
-      "eslint-import-resolver-netsuite": {},
+    settings: {
+        'import/resolver': {
+            'eslint-import-resolver-netsuite': {},
+        },
     },
-  },
-};
+}
 ```
 
 [eslint-plugin-import-home]: https://github.com/benmosher/eslint-plugin-import
