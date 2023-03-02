@@ -18,7 +18,7 @@ This resolver accepts a single configuration option: `extensions`. This defaults
 module.exports = {
     settings: {
         'import/resolver': {
-            'eslint-import-resolver-netsuite': {},
+            '@dfh-foundation/eslint-import-resolver-netsuite': {},
         },
     },
 }
