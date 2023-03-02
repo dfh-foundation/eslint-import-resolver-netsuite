@@ -6,18 +6,18 @@ module.exports = {
     node: true,
   },
   extends: [
-    "eslint:recommended",
+    'eslint:recommended',
     // Use recommended rules from the @typescript-eslint/eslint-plugin
-    "plugin:@typescript-eslint/recommended",
+    'plugin:@typescript-eslint/recommended',
     /* Disable formatting rules that conflict with prettier but avoid formatting from
        ESLint (i.e. eslint-plugin-prettier) */
-    "prettier",
+    'prettier',
   ],
-  parser: "@typescript-eslint/parser",
+  parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 2018,
-    sourceType: "module",
+    sourceType: 'module',
   },
-  plugins: ["@typescript-eslint"],
+  plugins: ['@typescript-eslint'],
   settings: {},
-};
+}
