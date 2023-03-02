@@ -5,7 +5,7 @@
   "author": "Johnny Walker <jwalker@designsforhealth.com>",
   "contributors": [],
   "dependencies": {
-    "debug": "^4.3.1",
+    "debug": "^4.3.4",
     "resolve": "^1.19.0"
   },
   "devDependencies": {
